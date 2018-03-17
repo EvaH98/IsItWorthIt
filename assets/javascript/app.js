@@ -4,14 +4,28 @@
 //globals
 var gasPrice = 2.536 //$-gallon from aaa.com
 var hourValue = 25 //$-hour based on median income in usa
-var electricMpg = 83
-var compactMpg = 60
-var midSizeMpg = 44
-var fullSizeMpg = 37
-var smallSuvMpg = 34
-var largeSuvMpg = 29
-var miniVanMpg = 31
-var pickUpMpg = 26
+
+var mpgObj = {
+    "electric":33, 
+    "compact": 60,
+    "midSize": 44,
+    "fullSize":37,
+    "smallSuv": 34,
+    "largSuv": 29,
+    "miniVan": 31,
+    "pickUp": 26
+};
+// var electricMpg = 83
+// var compactMpg = 60
+// var midSizeMpg = 44
+// var fullSizeMpg = 37
+// var smallSuvMpg = 34
+// var largeSuvMpg = 29
+// var miniVanMpg = 31
+// var pickUpMpg = 26
+
+var carCarbon = 19.6 //lbs/gallon
+var flyCarbon = 0.25 //lbs/flight mile
 
 //electric time per mile to charge = 0.43 minutes/mile traveled 
 //electric cost per mile to charge = 0.04 dollars/mile traveled
@@ -24,9 +38,9 @@ var pickUpMpg = 26
 
 //get car type from user input
 
-//get miles and travel time from google maps api, driving and flying
+//get miles and travel time from travel maps api, driving and flying
 
-//get flight cost from google api 
+//get flight cost from travel api 
 
 //if gas car picked: 
 //((tripMiles / MPG) * gasPrice) = trip cost
